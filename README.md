@@ -19,7 +19,30 @@ Finally, I added error handling around data fetching and saving operations to ac
 In conclusion, the project's primary focus was to build a robust and scalable frontend system while maintaining code quality through modular design patterns. Communication of key concepts such as component reusability, state management, and efficient API interaction was key to ensuring smooth progress and future scalability.
 
 
+# React + Vite Application
 
+This is a React application bootstrapped with Vite.
+
+## Getting Started
+
+Follow the steps below to set up and run the project.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   npm install
+   npm run dev
 
 
 

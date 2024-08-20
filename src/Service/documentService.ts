@@ -1,12 +1,9 @@
-import { isEmpty } from "../utils/utils"
 
 const DOCUMENTS_KEY = 'documents'
 
 export const DocumentService = {
   initialize: (initialDocuments: any[]) => {
-    if (isEmpty(JSON.parse(localStorage.getItem(DOCUMENTS_KEY) ?? ''))) {
       localStorage.setItem(DOCUMENTS_KEY, JSON.stringify(initialDocuments))
-    }
   },
 
   fetchDocuments: () => {

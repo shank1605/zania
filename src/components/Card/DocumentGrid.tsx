@@ -15,7 +15,7 @@ export const DocumentGrid: React.FC<DocumentGridProps> = ({ documents, moveCard,
 
   return (
     <Grid container spacing={3} ref={drop}>
-      {documents.map((doc, index) => (
+      {documents.length && documents.map((doc, index) => (
         <Grid item xs={12} sm={6} md={4} key={doc.id}>
           <DocumentCard
             index={index}

@@ -12,7 +12,6 @@ import Typography from '@mui/material/Typography'
 const Home: React.FC = () => {
   const { documents, setDocuments, loading, saving, timeSinceLastSave } = useDocuments()
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-console.log(documents)
   const handleCardClick = (image: string) => {
     setSelectedImage(image)
   }

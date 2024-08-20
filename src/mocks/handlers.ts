@@ -13,13 +13,13 @@ const saveDocuments = (documents: any[]) => {
 
 export const handlers = [
   // Handler for fetching documents
-  http.get('/api/documents', ({ }) => {
+  http.get('/api/documents', () => {
     const documents = getDocuments()
     return HttpResponse.json(documents)
   }),
 
   // Handler for saving documents
-  http.post('/api/documents', ({ request, params, cookies }) => {
+  http.post('/api/documents', ({ request }) => {
     const newDocuments: any = request.body 
     saveDocuments(newDocuments ?? [])
     return HttpResponse.json(newDocuments)

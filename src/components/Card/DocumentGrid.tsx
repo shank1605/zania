@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDrop } from 'react-dnd'
 import { Grid } from '@mui/material'
-import DocumentCard from './DocumentCard' // A modular card component
+
+const DocumentCard = React.lazy(() => import('./DocumentCard'))
 
 interface DocumentGridProps {
   documents: any[]
